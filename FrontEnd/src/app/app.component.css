@@ -1,36 +1,38 @@
 
 img{
-	width: 100%;
+	width: 130%;
 }
 .login {
-    height: 750px;
+    height: 38rem;
     width: 100%;
-    background: radial-gradient(#653d84, #332042);
-    position: relative;
+    background: radial-gradient(red, green);
+    position: fixed;
 }
 .login_box {
-    width: 1050px;
-    height: 600px;
+    width: 60%;
+    height: 80%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 1px 4px 22px -8px #0004;
+    background: green;
+    border-radius: 10%;
     display: flex;
     overflow: hidden;
 }
+
 .login_box .left{
-  width: 41%;
+  width: 80%;
   height: 100%;
-  padding: 25px 25px;
+  /* padding: 25px 25px; */
   
 }
+
 .login_box .right{
-  width: 59%;
+  width: 100%;
   height: 100%  
 }
+
 .left .top_link a {
     color: #452A5A;
     font-weight: 400;
@@ -63,6 +65,7 @@ img{
     font-weight: 600;
     font-size: 14px;
 }
+
 p{
     border: none;
     font-size: 15px;
@@ -79,7 +82,7 @@ p{
     border-radius: 8px;
     display: block;
     margin: auto;
-    margin-top: 120px;
+    margin-top: 40px;
     background: #583672;
     color: #fff;
     font-weight: bold;
@@ -88,10 +91,9 @@ p{
     box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
 }
 
-
-
 .right {
-	background: linear-gradient(212.38deg, rgba(242, 57, 127, 0.7) 0%, rgba(175, 70, 189, 0.71) 100%),url(../assets/donation-box.jpg);
+	background: linear-gradient(212.38deg, rgba(242, 57, 127, 0.7) 0%, rgba(175, 70, 189, 0.71) 100%),url(../assets/donation-box.jpg) ;
+  background-size: cover;
 	color: #fff;
 	position: relative;
 }
@@ -101,20 +103,21 @@ p{
   position: relative;
   transform: translate(0%, 45%);
 }
+
 .right-text h2{
   display: block;
-  width: 100%;
+  width: 80%;
   color:gold;
   text-align: center;
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 200%;
+  font-weight: 800;
 }
 .right-text h5{
   display: block;
   width: 100%;
   text-align: center;
   color:#eee;
-  font-size: 19px;
+  font-size: 120%;
   font-weight: 300;
 }
 
@@ -132,12 +135,99 @@ p{
     padding-right: 7px;
     margin-top: -3px;
 }
-.contact img{
+
+
+@media (min-height: 680px), screen and (orientation: portrait){
+  img{
+    width: 115%;
+    margin-right: -35px;
+    margin-top: -15px;
+    padding-left: -25%;
+  }
+  .right-text h5{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color:#eee;
+    font-size: 170%;
+    font-weight: 300;
+  }
+  .login {
+    height: 80rem;
+    width: 100%;
+    background: radial-gradient(red, green);
+    position: fixed;
+}
+  .login_box{
+    width: 95%;
+    height: 70%;
+    position: relative;
+    top: 36%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+  }
+ 
+  .right .right-text{
+    height: 25%;
+    position: relative; 
     align-content: center;
     justify-content: center; 
-    margin-top: 0px;
-    padding-top: 0px;
+    
+  }
+  .right {
+    background: linear-gradient(212.38deg, rgba(242, 57, 127, 0.7) 0%, rgba(175, 70, 189, 0.71) 100%),url(../assets/donation-box.jpg);
+    background-size: cover;
+    color: #fff;
+    height: 70%; 
+    width: 700px;
+    margin-left: 23%;  
+  }
+  .right-text h2{
+    display: block;
+    height: 20%;
+    color:gold;
+    text-align: center;
+    font-size: 120%;
+      
+  }
+  .submit {
+    border: none;
+    border: none;
+    padding: 15px 70px;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    background: #583672;
+    color: #fff;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    -moz-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+}
+.left input {
+  border: none;
+  width: 100%;
+  margin: 20px 0px;
+  border-bottom: 1px solid #4f30677d;
+  padding: 7px 9px;
+  overflow: hidden;
+  background: transparent;
+  font-weight: 800;
+  font-size: 17px;
+}
+.login_box .left{
+  width: 99%;
+  height: 50%;
+  left: 23%;  
 }
 
+.login_box .right{
+  width: 100%;
+  height: 50% ;
+  right: 23%;
+}
 
-
+}
